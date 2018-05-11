@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*"],
+      "CommonComponents": ["./common/Components/index"]
+    }
+  }
+}
