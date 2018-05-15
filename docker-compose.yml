@@ -1,0 +1,15 @@
+version: "3"
+services:
+  client:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/web
+      - /web/node_modules
+      - /web/build
+    ports:
+      - 2017:2017
+    environment:
+      DOCKER: "true"
+    
