@@ -25,29 +25,29 @@ class TopBar extends Component {
           <li>
             {this.props.landing &&
               <ScrollLink smooth to='contact' className={styles.link}>
-                Contacto
+                Contact
               </ScrollLink>
             }
             {!this.props.landing &&
               <Link to='/' className={styles.link}>
-                Contacto
+                Contact
               </Link>
             }
           </li>
           <li>
             <a href='http://docs.facturapi.io' target='_blank' className={styles.link}>
-              Documentación
+              Docs
               <i className='fa fa-external-link' />
             </a>
           </li>
           {this.props.isLoggedIn &&
             <li>
-              <ButtonLink href='/dashboard' buttonType='cta' className={`${styles.button} ${styles.link}`}>Ir a dashboard</ButtonLink>
+              <ButtonLink href='/dashboard' buttonType='cta' className={`${styles.button} ${styles.link}`}>Dashboard</ButtonLink>
             </li>
           }
           {!this.props.isLoggedIn &&
             <li>
-              <ButtonLink to='/login' buttonType='cta' className={`${styles.button} ${styles.link}`}>Inicia sesión</ButtonLink>
+              <ButtonLink to='/login' buttonType='cta' className={`${styles.button} ${styles.link}`}>Login</ButtonLink>
             </li>
           }
         </ul>
@@ -61,7 +61,7 @@ TopBar.defaultProps = {
 };
 
 const mapStateToProps = (state) => ({
-  isLoggedIn: state.user.isLoggedIn
+  isLoggedIn: false
 });
 
 const mapDispatchToProps = (dispatch) => ({});

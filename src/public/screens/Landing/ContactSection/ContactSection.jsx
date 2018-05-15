@@ -34,27 +34,27 @@ export default class ContactSection extends Component {
         <Element name='contact' />
         <Container>
           <div className={styles.compactForm}>
-            <h3>Contáctanos</h3>
-            {this.props.result.isWorking &&
+            <h3>Contact</h3>
+            {false &&
               <Spinner className={styles.spinner} />
             }
-            {this.props.result.complete && !this.props.result.ok &&
+            {false &&
               <Alert type='danger' onClick={this.props.dismissResult} className={styles.errorAlert}>
                 {this.props.result.message}
               </Alert>
             }
-            {this.props.result.complete && this.props.result.ok &&
+            {false &&
               <Alert type='success' className={styles.successAlert}>
                 Hemos recibido tu mensaje. Nos pondremos en contacto contigo en la brevedad.
               </Alert>
             }
-            {!this.props.result.isWorking && !this.props.result.ok &&
+            {!false &&
               <form onSubmit={this.onSubmit}>
                 <FormGroup>
                   <InputText
                     required
                     name='name'
-                    placeholder='Tu nombre'
+                    placeholder='Your Name'
                     className={styles.input}
                     onChange={this.onInputChange} />
                 </FormGroup>
@@ -63,7 +63,7 @@ export default class ContactSection extends Component {
                     required
                     type='email'
                     name='email'
-                    placeholder='Tu correo electrónico'
+                    placeholder='Your Email'
                     className={styles.input}
                     onChange={this.onInputChange} />
                 </FormGroup>
@@ -71,13 +71,13 @@ export default class ContactSection extends Component {
                   <TextArea
                     required
                     name='message'
-                    placeholder='Escribe tu mensaje'
+                    placeholder='Your Message'
                     className={styles.input}
                     onChange={this.onInputChange} />
                 </FormGroup>
                 <FormGroup>
                   <Button buttonType='cta' size='large' className={styles.cta}>
-                    Enviar
+                    Send
                   </Button>
                 </FormGroup>
               </form>

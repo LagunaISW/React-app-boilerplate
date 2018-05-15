@@ -8,11 +8,8 @@ export default class Footer extends Component {
       <div className={styles.base}>
         <Container className={styles.container}>
           <span>
-            &copy; {(new Date()).getFullYear()} Facturapi. Todos los derechos reservados.
+            &copy; {(new Date()).getFullYear()} React App
           </span>
-          <a href='mailto:contacto@facturapi.io'>
-            contacto@facturapi.io
-          </a>
         </Container>
       </div>
     );
