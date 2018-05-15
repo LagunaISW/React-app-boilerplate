@@ -1,0 +1,23 @@
+.link {
+  padding: 8px 12px;
+  color: #666;
+  margin: 0 -10px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link:hover {
+  background-color: rgba(0, 147, 213, 0.2);
+}
+
+.link i {
+  color: #bbb;
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+}

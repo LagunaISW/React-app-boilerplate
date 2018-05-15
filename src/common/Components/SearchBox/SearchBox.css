@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  display: block;
+}
+
+.container i {
+  position: absolute;
+  display: inline-block;
+}
+
+.input {
+  composes: input from '../InputText/InputText.css';
+  padding-left: 30px;
+  padding-right: 26px;
+}
+
+.searchIcon {
+  text-align: center;
+  line-height: 35px;
+  top: 0;
+  left: 10px;
+  color: #1168A3;
+}
+
+.clearButton {
+  cursor: pointer;
+  right: 5px;
+  padding: 0 5px;
+  line-height: 25px;
+  top: 5px;
+  color: #818899;
+}
+
+.clearButton:hover {
+  color: #a1aabb;
+}

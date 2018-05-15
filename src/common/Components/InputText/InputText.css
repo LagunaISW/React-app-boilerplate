@@ -1,0 +1,72 @@
+.input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+  line-height: 34px;
+  outline: none;
+  display: block;
+  width: 100%;
+  color: #444;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.input:focus {
+  border-color: #0093D5;
+  box-shadow: 0 0 5px #0093D580;
+}
+
+.input[readonly] {
+  background-color: #eee;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.input.large {
+  padding: 3px 15px;
+  border-radius: 6px;
+}
+
+.input.borderless {
+  border: 0;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer i {
+  font-size: 20px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  color: #999;
+  transition: all 0.2s ease-in-out;
+  /* background-color: #f44; */
+}
+
+.inputContainer .input {
+  padding-left: 40px;
+}
+
+.inputContainer .input.large + i {
+  top: 0px;
+  left: 5px;
+  width: 30px;
+  height: 42px;
+  line-height: 42px;
+}  
+
+.inputContainer .input.large.borderless + i {
+  height: 38px;
+  line-height: 38px;
+}  
+
+.inputContainer .input:focus + i {
+  color: #888;
+}

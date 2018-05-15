@@ -1,0 +1,7 @@
+.button {
+  composes: base default from '../Button/Button.css';
+}
+
+.input {
+  display: none;
+}

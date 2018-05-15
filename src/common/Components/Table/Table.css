@@ -1,0 +1,26 @@
+.base {
+  width: 100%;
+}
+
+.base th,
+.base td {
+  text-align: left;
+  padding: 5px;
+}
+
+.base thead th,
+.base tbody td {
+  border-bottom: 1px solid #ccc;
+}
+
+.base tfoot td {
+  border-top: 1px solid #ccc;
+}
+
+.base .right {
+  text-align: right;
+}
+
+.base .center {
+  text-align: center;
+}

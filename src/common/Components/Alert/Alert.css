@@ -1,0 +1,34 @@
+.container {
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.container a[href] {
+  color: white;
+  font-weight: 600;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.danger {
+  background-color: palevioletred;
+  color: white;
+}
+
+.info {
+  background-color: #cef;
+  color: #616677;
+}
+
+.success {
+  background-color: #ced;
+  color: #616677;
+}
+
+.warning {
+  background-color: #fd8;
+  color: #616677;
+}

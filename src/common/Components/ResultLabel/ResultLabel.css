@@ -1,0 +1,14 @@
+.base {
+  padding: 5px 0;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: #f33;
+}
+
+.success {
+  color: #2a5;
+}
